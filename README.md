@@ -2,11 +2,11 @@
 # Eat Safe, Love
 ### INTRODUCTION:
 This project focuses on managing and updating a MongoDB database for UK food establishments using Python and MongoDB. It provides a step-by-step process to set up the database, import data, and perform CRUD operations.
-Project Structure
+## Project Structure
 The project is divided into two main parts:
 •	Part 1: Database Setup
 •	Part 2: Database Update and Data Manipulation
-Part 1: Database Setup
+### Part 1: Database Setup
 1. Import Data
 To import the data from the provided establishments.json file into MongoDB, use the following command:
 mongoimport --db uk_food --collection establishments --file establishments.json --jsonArray
@@ -15,7 +15,7 @@ The project uses pymongo to interact with MongoDB. Below are the steps:
 •	Establish a connection using MongoClient.
 •	Verify the database and collection creation.
 •	Preview the first document in the establishments collection.
-Part 2: Database Update and Data Manipulation
+### Part 2: Database Update and Data Manipulation
 1. Add a New Restaurant
 A new halal restaurant, "Penang Flavours," was added to the database with initial details. The record was inserted using the following code:
 2. Update BusinessTypeID
