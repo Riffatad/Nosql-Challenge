@@ -47,23 +47,23 @@ The dataset contains information on various food establishments across the UK, i
 ## Analysis Summary
 ## Exploratory Analysis
 This project focuses on answering key questions about food hygiene and safety using MongoDB queries and Pandas for data manipulation.
-1. Establishments with a Hygiene Score of 20
+#### 1. Establishments with a Hygiene Score of 20
 •	Objective: Identify establishments with the worst hygiene conditions.
 •	Method: Queried for scores.Hygiene equal to 20.
 •	Result: There are 41 establishments with a hygiene score of 20, indicating severe violations. These include care homes, takeaways, and cafes.
 
-3. Establishments in London with a Rating Value of 4 or Higher
+#### 2. Establishments in London with a Rating Value of 4 or Higher
    
 •	Objective: Find highly-rated establishments in the London area.
 •	Method: Used a regex query to filter by LocalAuthorityName containing "London" and RatingValue >= 4.
 •	Result: Found 33 establishments in London with good ratings (4 or 5). This includes various catering businesses and restaurants.
 
-4. Top 5 Establishments Near "Penang Flavours" with a Rating Value of 5
+##### 3. Top 5 Establishments Near "Penang Flavours" with a Rating Value of 5
 •	Objective: Identify the best-rated establishments close to a specific location.
 •	Method: Queried for establishments with RatingValue of 5 within a small radius (±0.01 degrees) of "Penang Flavours".
 •	Result: The top 5 establishments include highly-rated restaurants and cafes with low hygiene scores, offering quality dining options near the specified location.
 
-6. Local Authorities with the Most Establishments Scoring 0 in Hygiene
+#### 4. Local Authorities with the Most Establishments Scoring 0 in Hygiene
 •	Objective: Determine areas with significant food safety issues.
 •	Method: Aggregated data by LocalAuthorityName for establishments with scores.Hygiene equal to 0.
 •	Result: The top 10 Local Authorities with the most hygiene issues are:
